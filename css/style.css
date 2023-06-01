@@ -1,1 +1,19 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+:root {
+  --lt-blue: #a6d0dd;
+  --lt-white: #fff9de;
+  --primary: var(--lt-blue);
+  --secondary: var(--lt-white);
+  --animation: all 0.6s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: var(--lt-white);
+}/*# sourceMappingURL=style.css.map */
