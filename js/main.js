@@ -20,13 +20,14 @@ card.addEventListener("mouseenter", () => {
     let logo = document.querySelector(".img");
     let p = document.querySelectorAll(".card p");
     let name = document.querySelector("h1");
+    let a = document.querySelector(".links");
     logo.style.transform = "translateZ(100px)";
     name.style.transform = "translateZ(190px)";
+    a.style.transform = "translateZ(190px)";
     let k = 175;
     p.forEach((e) => {
         e.style.transform = `translateZ(${k}px)`;
         k -= 20;
         console.log(e);
     });
-    console.log(p);
 });

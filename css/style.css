@@ -26,8 +26,8 @@ body {
 }
 
 .container {
-  width: 60vw;
-  height: 70vh;
+  min-width: 40vw;
+  min-height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@ body {
   padding: 1rem;
   border-radius: 1rem;
   transform-style: preserve-3d;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .container .card .img {
   width: 100%;
@@ -71,14 +71,36 @@ body {
   text-indent: 2rem;
   line-height: 1.2;
   font-size: 1rem;
+  text-align: justify;
+}
+.container .card .links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.container .card .links a {
+  font-size: 1.7rem;
+  color: var(--grey);
+  transition: var(--animation);
+}
+.container .card .links a:hover {
+  color: var(--lt-white);
 }
 
 @media screen and (max-width: 480px) {
   .container {
     width: 100vw;
-    height: 100vh;
   }
   .container .card {
-    width: 90vw;
+    width: 91vw;
+  }
+  .container .card .img .wrap {
+    width: 8rem;
+    height: 8rem;
+  }
+  .container p {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
