@@ -29,7 +29,6 @@ body {
 .container {
     width: 60vw;
     height: 70vh;
-    background-color: rgb(255, 112, 112);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,9 +37,10 @@ body {
     .card {
         width: 35vw;
         min-height: 20vh;
-        background-color: var(--lt-blue);
+        background: linear-gradient(135deg, var(--lt-blue), #2da4c9 65%);
         padding: 1rem;
         border-radius: 1rem;
+        transform-style: preserve-3d;
         .img {
             width: 100%;
             display: flex;
@@ -68,6 +68,7 @@ body {
             p {
                 margin-top: 1rem;
                 text-indent: 2rem;
+                line-height: 1.2;
             }
         }
     }
