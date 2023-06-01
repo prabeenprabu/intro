@@ -7,7 +7,6 @@ card.addEventListener("mousemove", (m) => {
     let sh = window.innerHeight / 2;
     let x = (mx - sw) / 3.7;
     let y = (my - sh) / 9;
-    console.log(x, y);
     card.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
 });
 //left card
@@ -17,8 +16,17 @@ card.addEventListener("mouseleave", () => {
 });
 //mouse enter
 card.addEventListener("mouseenter", () => {
-    // card.style.transition = "none";
+    card.style.transition = "none";
     let logo = document.querySelector(".img");
-    let p = document.querySelectorAll("p");
+    let p = document.querySelectorAll(".card p");
     let name = document.querySelector("h1");
+    logo.style.transform = "translateZ(100px)";
+    name.style.transform = "translateZ(190px)";
+    let k = 175;
+    p.forEach((e) => {
+        e.style.transform = `translateZ(${k}px)`;
+        k -= 20;
+        console.log(e);
+    });
+    console.log(p);
 });

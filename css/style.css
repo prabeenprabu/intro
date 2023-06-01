@@ -6,7 +6,7 @@
   --primary: var(--lt-blue);
   --secondary: var(--lt-white);
   --grey: #27374d;
-  --animation: all 0.6s ease;
+  --animation: all 0.6s ease-in-out;
 }
 
 * {
@@ -40,6 +40,7 @@ body {
   padding: 1rem;
   border-radius: 1rem;
   transform-style: preserve-3d;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .container .card .img {
   width: 100%;
@@ -52,6 +53,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid var(--grey);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .container .card .img .wrap img {
   width: 100%;
@@ -64,10 +66,11 @@ body {
   font-weight: 100;
   color: var(--grey);
 }
-.container .card .about p {
+.container .card p {
   margin-top: 1rem;
   text-indent: 2rem;
   line-height: 1.2;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 480px) {
